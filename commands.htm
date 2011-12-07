@@ -1,0 +1,316 @@
+<html>
+<head>
+<title>MiniB3D Commands List</title>
+</head>
+<body>
+Please see the <a href="http://www.blitzbasic.com/b3ddocs/docs.php">Blitz3D online manual</a> for detailed documentation.<br>
+<br>
+Command List (black = not available, <font color="#0000FF">blue = available,</font> <font color="#FF0000">red = MiniB3D only)</font></br>
+<br>
+Global<br>
+------<br>
+<font color="#0000FF">Graphics3D</font><br>
+Dither<br>
+WBuffer<br>
+<font color="#0000FF">AntiAlias<br>
+Wireframe</font><br>
+HWMultiTex<br>
+<font color="#0000FF">AmbientLight<br>
+ClearCollisions<br>
+Collisions<br>
+UpdateWorld</font><br>
+CaptureWorld<br>
+<font color="#0000FF">RenderWorld<br>
+ClearWorld</font><br>
+LoaderMatrix<br>
+TrisRendered<br>
+<br>
+Texture<br>
+-------<br>
+<font color="#0000FF">CreateTexture<br>
+LoadTexture<br>
+LoadAnimTexture<br>
+FreeTexture<br>
+TextureBlend<br>
+TextureCoords<br>
+ScaleTexture<br>
+PositionTexture<br>
+RotateTexture<br>
+TextureWidth<br>
+TextureHeight<br></font>
+TextureBuffer<br>
+<font color="#0000FF">TextureName<br>
+GetBrushTexture<br>
+ClearTextureFilters<br>
+TextureFilter<br>
+SetCubeFace<br>
+SetCubeMode</font><br>
+<font color="#FF0000">BackBufferToTex</font><br>
+<br>
+Brush<br>
+-----<br>
+<font color="#0000FF">CreateBrush<br>
+LoadBrush<br>
+FreeBrush<br>
+BrushColor<br>
+BrushAlpha<br>
+BrushShininess<br>
+BrushTexture<br>
+BrushBlend<br>
+BrushFX<br>
+GetEntityBrush<br>
+GetSurfaceBrush<br>
+</font><br>
+Mesh<br>
+----<br>
+<font color="#0000FF">CreateMesh<br>
+LoadMesh<br>
+LoadAnimMesh<br>
+CreateCube<br>
+CreateSphere<br>
+CreateCylinder<br>
+CreateCone<br>
+CopyMesh<br>
+AddMesh<br>
+FlipMesh<br>
+PaintMesh</font><br>
+LightMesh<br>
+<font color="#0000FF">FitMesh<br>
+ScaleMesh<br>
+RotateMesh<br>
+PositionMesh<br>
+UpdateNormals</font><br>
+MeshesIntersect<br>
+<font color="#0000FF">MeshWidth<br>
+MeshHeight<br>
+MeshDepth<br>
+CountSurfaces<br>
+GetSurface</font><br>
+<font color="#FF0000">MeshCullRadius</font><br>
+<br>
+Surface<br>
+-------<br>
+<font color="#0000FF">CreateSurface<br>
+PaintSurface<br>
+ClearSurface<br>
+FindSurface<br>
+AddVertex<br>
+AddTriangle<br>
+VertexCoords<br>
+VertexNormal<br>
+VertexColor<br>
+VertexTexCoords<br>
+CountVertices<br>
+CountTriangles<br>
+VertexX<br>
+VertexY<br>
+VertexZ<br>
+VertexNX<br>
+VertexNY<br>
+VertexNZ<br>
+VertexRed<br>
+VertexGreen<br>
+VertexBlue<br>
+VertexAlpha<br>
+VertexU<br>
+VertexV<br>
+VertexW<br>
+TriangleVertex</font><br>
+<br>
+Camera<br>
+------<br>
+<font color="#0000FF">CreateCamera<br>
+CameraProjMode<br>
+CameraFogMode<br>
+CameraFogRange<br>
+CameraFogColor<br>
+CameraViewport<br>
+CameraClsMode<br>
+CameraClsColor<br>
+CameraRange<br>
+CameraZoom<br>
+CameraPick<br>
+PickedX<br>
+PickedY<br>
+PickedZ<br>
+PickedNX<br>
+PickedNY<br>
+PickedNZ<br>
+PickedTime<br>
+PickedEntity<br>
+PickedSurface<br>
+PickedTriangle<br>
+CameraProject<br>
+ProjectedX<br>
+ProjectedY<br>
+ProjectedZ<br>
+EntityInView</font><br>
+<br>
+Light<br>
+-----<br>
+<font color="#0000FF">CreateLight<br>
+LightRange<br>
+LightColor<br>
+LightConeAngles</font><br>
+<br>
+Pivot<br>
+-----<br>
+<font color="#0000FF">CreatePivot</font><br>
+<br>
+Sprite<br>
+------<br>
+<font color="#0000FF">CreateSprite<br>
+LoadSprite<br>
+RotateSprite<br>
+ScaleSprite<br>
+HandleSprite<br>
+SpriteViewMode</font><br>
+<br>
+MD2<br>
+---<br>
+LoadMD2<br>
+AnimateMD2<br>
+MD2AnimTime<br>
+MD2AnimLength<br>
+MD2Animating<br>
+<br>
+BSP<br>
+---<br>
+LoadBSP<br>
+BSPAmbientLight<br>
+BSPLighting<br>
+<br>
+Plane<br>
+-----<br>
+CreatePlane<br>
+<br>
+Mirror<br>
+------<br>
+CreateMirror<br>
+<br>
+Terrain<br>
+-------<br>
+CreateTerrain<br>
+LoadTerrain<br>
+TerrainSize<br>
+TerrainDetail<br>
+TerrainShading<br>
+TerrainHeight<br>
+ModifyTerrain<br>
+TerrainX<br>
+TerrainY<br>
+TerrainZ<br>
+<br>
+Listener/Audio<br>
+--------------<br>
+CreateListener<br>
+Load3DSound<br>
+EmitSound<br>
+<br>
+Entity Movement<br>
+---------------<br>
+<font color="#0000FF">ScaleEntity<br>
+PositionEntity<br>
+MoveEntity<br>
+TranslateEntity<br>
+RotateEntity<br>
+TurnEntity<br>
+PointEntity</font><br>
+AlignToVector<br>
+<br>
+EntityAnimation<br>
+---------------<br>
+<font color="#0000FF">LoadAnimSeq</font><br>
+SetAnimKey<br>
+AddAnimSeq<br>
+<font color="#0000FF">ExtractAnimSeq<br>
+Animate<br>
+SetAnimTime<br>
+AnimSeq<br>
+AnimLength<br>
+AnimTime<br>
+Animating</font><br>
+<br>
+EntityControl<br>
+-------------<br>
+<font color="#0000FF">FreeEntity<br>
+CopyEntity<br>
+EntityColor<br>
+EntityAlpha<br>
+EntityShininess<br>
+EntityTexture<br>
+EntityBlend<br>
+EntityFX<br>
+EntityAutoFade<br>
+PaintEntity<br>
+EntityOrder<br>
+ShowEntity<br>
+HideEntity<br>
+NameEntity<br>
+EntityParent<br>
+GetParent</font><br>
+<br>
+EntityState<br>
+-----------<br>
+<font color="#0000FF">EntityX<br>
+EntityY<br>
+EntityZ<br>
+EntityRoll<br>
+EntityYaw<br>
+EntityPitch<br>
+EntityClass<br>
+EntityName<br>
+CountChildren<br>
+GetChild<br>
+FindChild<br>
+EntityPick<br>
+LinePick<br>
+EntityVisible<br>
+EntityDistance<br>
+DeltaYaw<br>
+DeltaPitch<br>
+TFormPoint<br>
+TFormVector<br>
+TFormNormal<br>
+TFormedX<br>
+TFormedY<br>
+TFormedZ<br>
+GetMatElement</font><br>
+<br>
+EntityCollision<br>
+---------------<br>
+<font color="#0000FF">ResetEntity<br>
+EntityRadius<br>
+EntityBox<br>
+EntityType<br>
+EntityPickMode<br>
+EntityCollided<br>
+CountCollisions<br>
+CollisionX<br>
+CollisionY<br>
+CollisionZ<br>
+CollisionNX<br>
+CollisionNY<br>
+CollisionNZ<br>
+CollisionTime<br>
+CollisionEntity<br>
+CollisionSurface<br>
+CollisionTriangle<br>
+GetEntityType</font><br>
+<br>
+3D Maths<br>
+--------<br>
+<font color="#0000FF">VectorYaw<br>
+VectorPitch</font><br>
+<br>
+Graphics Mode<br>
+-------------<br>
+CountGfxModes3D<br>
+GfxMode3D<br>
+GfxMode3DExists<br>
+GfxDriver3D<br>
+GfxDriverCaps3D<br>
+Windowed3D<br>
+HWTexUnits<br>
+</body>
+</html>

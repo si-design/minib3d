@@ -1,0 +1,68 @@
+functions.bmx
+Line: 795
+Function Graphics3D(width:Int,height:Int,depth:Int=0,mode:Int=0,rate:Int=60,flags:Int=-1) 'SMALLFIXES added flags
+
+TBlitz2D.bmx
+Line: 5
+If THardwareInfo.VBOSupport 'SMALLFIXES hack to keep non vbo GFX from crashing
+
+TCollision.bmx
+Line: 164
+Local x:Int=C_CollisionResponse(c_col_info,c_coll,response) 'SMALLFIXES Collision fix from http://www.blitzmax.com/Community/posts.php?topic=87446
+
+TCollision.bmx
+Line: 198
+If x=False Then Exit 'SMALLFIXES Collision fix from http://www.blitzmax.com/Community/posts.php?topic=87446
+
+TEntity.bmx
+Line: 1125
+ListRemove(TCollisionPair.ent_lists[collision_type],Self) 'SMALLFIXES Collision fix from http://www.blitzbasic.com/Community/posts.php?topic=87551
+
+TGlobal.bmx
+Line: 13
+Function Graphics3D(w:Int,h:Int,d:Int=0,m:Int=0,r:Int=60,flags:Int=-1)	' SMALLFIXES added flags so that the ACCUMBUFFER can be left out (crashes parallels)
+
+TGlobal.bmx
+Line: 311
+'SMALLFIXES CreateSurface & BrushFX/EntityFX fix from http://www.blitzbasic.com/Community/posts.php?topic=88060
+
+THardwareInfo.bmx
+Line: 50
+If Not THardwareInfo.TexBlendSupport 'SMALLFIXES use the ARB version that works the same
+
+TMesh.bmx
+Line: 1201
+'SMALLFIXES CreateSurface & BrushFX/EntityFX fix from http://www.blitzbasic.com/Community/posts.php?topic=88060
+
+TMesh.bmx
+Line: 1709
+If THardwareInfo.VBOSupport 'SMALLFIXES this if statement is a hack to prevent crash when vbo is not supported by GFX
+
+TMesh.bmx
+Line: 1780
+If THardwareInfo.VBOSupport 'SMALLFIXES this if statement is a hack to prevent crash when vbo is not supported by GFX
+
+TMesh.bmx
+Line: 1976
+'//SMALLFIXES NOTFIXED 'DebugStop IRRmesh+others sometimes crash here under parallels
+
+TMesh.bmx
+Line: 1984
+If THardwareInfo.VBOSupport 'SMALLFIXES this if statement is a hack to prevent crash when vbo is not supported by GFX
+
+TPick.bmx
+Line: 204
+'SMALLFIXES to avoid crashes, skip pivots with pickmode 2
+
+TTexture.bmx
+Line: 38
+Method FreeTexture() 'SMALLFIXES New function from http://www.blitzbasic.com/Community/posts.php?topic=88263#1002039
+
+TTexture.bmx
+Line: 99
+glPixelStorei 2,pixmap.pitch/BytesPerPixel[pixmap.format]    'SMALLFIXES http://www.blitzmax.com/Community/posts.php?topic=87020
+
+TTexture.bmx
+Line: 545
+Function FileFind%(file$ Var) 'SMALLFIXES, replaced function to alow Incbin and Zipstream (from http://blitzmax.com/Community/posts.php?topic=88901#1009408 )
+
